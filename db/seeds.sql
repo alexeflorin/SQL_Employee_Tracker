@@ -1,4 +1,7 @@
-INSERT INTO departament 
+
+USE employee_db;
+
+INSERT INTO department ( name )
 VALUES 
 ("Engineering"),
 ("Human Resources"),
@@ -27,5 +30,7 @@ VALUES
 ("Kevin", "Tupik", 4, 4),
 ("Melisa", "Brown", 5, 5),
 ("Sara", "Lourd", 6, 6);
+
+
 
 
