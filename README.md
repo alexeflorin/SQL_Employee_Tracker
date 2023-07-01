@@ -20,8 +20,11 @@ npm instal, npm i mysql2, npm i inquirer@8.2.4
 This application allows the user to create, update and delete data to specific employees. The application is giving to the user the option to see all the employees, all the roles and all the employees,  add a department, add a role, ad an employee and update an employee role.
 
 ## Credits
-
 None
+
+## Mock-Up
+The following pictures shows an example of the application being used from the command line:
+[![This screenshot shows the Employee Tracker application access by CLI.](./assets/Screenshot%20July%2001%202023%2001%3A21%3A1.png)]
 
 ## License
 

@@ -137,7 +137,7 @@ LEFT JOIN employee manager
 		if (err) throw err;
 		console.table(res);
 
-		start ();
+		firstPrompt();
 	});
 }
 
@@ -181,8 +181,26 @@ function addDepartment () {
 }
 
 
-
-
-
-
-
+//  Add employee
+ function addEmployee() {
+	inquirer
+        .prompt([
+            {
+                type: 'list',
+                name: 'employee',
+                message: 'Add Employee',
+                choices: [
+					"John Doe",
+					"Mike Chan",
+					"Ashley Rodriguez",
+					"Kevin Tupik",
+					"Melisa Brown",
+					"Sara Lourd"
+				]
+			}
+		]).then((res)=> {
+			firstPrompt();
+			console.table(res);
+			});
+		
+	};
