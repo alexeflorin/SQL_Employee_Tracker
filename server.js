@@ -1,30 +1,25 @@
-
-const express = require ("express");
 const inquirer = require("inquirer");
 const mysql = require ('mysql2');
-const cTable = require('console.table');
+require('console.table');
 
 
 
 // Connect to database
 const connection = mysql.createConnection(
 	{
-	  host: 'localhost',
-	  port: "8889",
+	  host: '127.0.0.1',
 	  // MySQL username,
 	  user: 'root',
 	  // MySQL password
-	  password: 'root',
+	  password: 'password',
 	  database: 'employee_db'
 	},
 	console.log(`Connected to the employee_db database.`)
   );
 
-  connection.connect(function (err) {
-	if (err) throw err;
-	// run the start function after the connection is made to prompt the user
+ 
 	firstPrompt();
-  });
+
 
 
 // Function to start the app and use inquirer for questions 
@@ -39,9 +34,9 @@ function firstPrompt() {
 				"Add Employee",
 				"View All Roles",
 				"Add Roles",
-				"View All Departmentes",
+				"View All Departments",
 				"Add Department",
-				"Quite"
+				"Quit"
 			]
 		}
 	])
@@ -77,10 +72,9 @@ function firstPrompt() {
 				updateEmployeeRole();
 				break;
 
-			case "Exit":
-				connectionEnd();
-				console.log("Goodye");
-				break;	
+			default:
+				process.exit();
+
 		}
 
 
