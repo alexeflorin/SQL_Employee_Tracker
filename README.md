@@ -26,6 +26,11 @@ None
 The following pictures shows an example of the application being used from the command line:
 [![This screenshot shows the Employee Tracker application access by CLI.](./assets/Screenshot%20July%2001%202023%2001%3A21%3A1.png)]
 
+## Walkthrough Video
+[This video shows the functionality of the application]
+(https://drive.google.com/file/d/1Fg7rOJe9bOfDO_4oXDN2dXIkXlgcDRn1/view)
+
+
 ## License
 
 ![Github license](https://img.shields.io/badge/license-MIT-orange.svg)
